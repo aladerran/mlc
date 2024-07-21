@@ -4,7 +4,6 @@ from tvm.ir.module import IRModule
 from tvm.script import tir as T
 
 
-
 dtype = "float32"
 a_np = np.random.rand(128, 128).astype(dtype)
 b_np = np.random.rand(128, 128).astype(dtype)

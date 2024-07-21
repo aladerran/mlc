@@ -3,7 +3,7 @@ import tvm
 from tvm.ir.module import IRModule
 from tvm.script import tir as T
 
-"""
+
 
 # init data
 a = np.arange(16).reshape(4, 4)
@@ -85,7 +85,6 @@ rt_lib["conv"](data_tvm, weight_tvm, conv_tvm)
 np.testing.assert_allclose(conv_tvm.numpy(), conv_torch, rtol=1e-5)
 print("TVM conv test passed!")
 
-"""
 
 def lnumpy_mm_relu_v2(A: np.ndarray, B: np.ndarray, C: np.ndarray):
     Y = np.empty((16, 128, 128), dtype="float32")
